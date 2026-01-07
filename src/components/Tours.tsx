@@ -14,7 +14,7 @@ const Tours: React.FC<ToursComponentProps> = ({ tours, onRemove, onRefresh }) =>
                 </div>
             ) : (
                 <div className="min-h-screen w-full items-center justify-center flex flex-col">
-                    <p className="text-green-700 text-2xl mb-4">Tour not available!!!</p>
+                        <p className="text-red-700 text-2xl mb-4">Tour not available!!!</p>
                     <button className="ml-4 px-6 py-2 bg-green-600 text-white text-[18px] cursor-pointer" onClick={onRefresh}>Refresh</button>
                 </div>
             )}
